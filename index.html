@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Together Dreams</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #F2DAC4;
+    background-image:
+        linear-gradient(#ffffff55 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff55 1px, transparent 1px);
+    background-size: 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Ventana */
+.window {
+    background-color: #F2C6C2;
+    width: 380px;
+    padding: 40px 25px 30px;
+    border-radius: 26px;
+    box-shadow: 0 0 0 6px #0D0D0D;
+    position: relative;
+    text-align: center;
+}
+
+/* Barra superior tipo ventana */
+.window-bar {
+    position: absolute;
+    top: -22px;
+    left: 20px;
+    right: 20px;
+    height: 32px;
+    background-color: #F2DAC4;
+    border-radius: 14px;
+    box-shadow: 0 0 0 4px #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 12px;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #D95B5B;
+    border-radius: 50%;
+}
+
+/* Avatar */
+.avatar {
+    width: 130px;
+    height: 130px;
+    background-color: #F2DAC4;
+    border-radius: 50%;
+    margin: 10px auto 20px;
+    box-shadow: 0 0 0 5px #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    width: 125px;
+    image-rendering: pixelated;
+}
+
+/* Título */
+h1 {
+    font-size: 13px;
+    color: #735145;
+    margin-bottom: 24px;
+}
+
+/* Botones */
+a {
+    display: block;
+    text-decoration: none;
+    background-color: #D95B5B;
+    color: #fff;
+    padding: 14px;
+    margin: 14px 0;
+    border-radius: 14px;
+    box-shadow: 0 0 0 4px #0D0D0D;
+    transition: transform 0.15s;
+}
+
+a:hover {
+    transform: translateY(-3px);
+}
+/* Stickers */
+.sticker {
+    position: absolute;
+}
+
+.strawberry {
+    top: -80px;
+    right: -80px;
+}
+
+.boba {
+    bottom: -60px;
+    left: -80px;
+}
+
+.heart {
+    top: 160px;
+    left: -140px;
+}
+
+/* === IMÁGENES FLOTANTES === */
+.sticker {
+    position: absolute;
+    width: 120px;
+    pointer-events: none;
+}
+
+/* posiciones alrededor del recuadro */
+.sticker.top-left {
+    top: -70px;
+    left: -100px;
+    width: 130px;
+}
+
+.sticker.top-right {
+    top: -50px;
+    right: -340px;
+    width: 220;
+}
+
+.sticker.middle-right {
+    top: 140px;
+    right: -215px;
+    width: 200px;
+}
+
+.sticker.middle-left {
+    top: 120px;
+    width: 120px;
+    left: -380px;
+}
+
+.sticker.bottom-left {
+    bottom: -100px;
+    left: -300px;
+    width: 125px;
+}
+
+.sticker.bottom-right {
+    bottom: -30px;
+    right: -75px;
+    width: 140px;
+}
+
+
+/* flotación suave (opcional, pero queda muy cute) */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+.sticker {
+    animation: float 3s ease-in-out infinite;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="window">
+
+    <div class="window-bar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <!-- Stickers -->
+    <img src="Imagenes/postre4.png" class="sticker strawberry">
+    <img src="Imagenes/postre2.png" class="sticker boba">
+    <img src="Imagenes/postre3.png" class="sticker heart">
+
+    <div class="avatar">
+        <img src="Imagenes/logo.png" alt="Together Dreams">
+    </div>
+
+    <!-- IMÁGENES FLOTANTES -->
+<img src="Imagenes/gatito.png" class="sticker top-left">
+<img src="Imagenes/postre1.png" class="sticker top-right">
+<img src="Imagenes/postre5.png" class="sticker middle-right">
+<img src="Imagenes/postre6.png" class="sticker middle-left">
+<img src="Imagenes/postre7.png" class="sticker bottom-left">
+<img src="Imagenes/postre8.png" class="sticker bottom-right">
+
+
+    <h1>TOGETHER DREAMS</h1>
+
+    <a href="https://www.facebook.com/share/19QerC4fkk/">Facebook</a>
+    <a href="https://www.instagram.com/toge_therdreams_5?igsh=Z2d1YnpzZmNzNGU5">Instagram</a>
+    <a href="https://wa.link/pzj9rr">Whatsapp</a>
+
+    <div class="footer">
+        Hecho con amor ♡
+    </div>
+
+</div>
+
+</body>
+</html>
